@@ -5,17 +5,18 @@ macOS on DELL XPS13 (9350)
 
 This project targets at giving the relatively complete functional macOS for XPS13 9350. Before you start, there's a brief introduction of how to finish powering up macOS on your laptop:
 
-1. Create a vanilla installation disk (USB or other removable disk). (Google how to)
-2. Install Clover with UEFI only and UEFI64Drivers to the installation disk just created.
-3. Replace the original CLOVER folder with the one under my Git/XPS9350-macOS/CLOVER.
-4. Change BIOS settings to the following
+1. Update firmware (Download firmware here: [9350](http://www.dell.com/support/home/us/en/04/product-support/product/xps-13-9350-laptop/drivers?os=naa) [9360](http://www.dell.com/support/home/us/en/04/product-support/product/xps-13-9360-laptop/drivers?os=naa), save on msdos/fat formatted usb, reboot, press F12, choose Update Firmware, navigate to .exe file, plug into power, answer prompts as necessary)
+2. Create a vanilla installation disk (USB or other removable disk). (Google how to)
+3. Install Clover with UEFI only and UEFI64Drivers to the installation disk just created.
+4. Replace the original CLOVER folder with the one under my Git/XPS9350-macOS/CLOVER.
+5. Change BIOS settings to the following
   * Disable Secure Boot
   * Set SATA Operation to AHCI
-5. Boot to USB and hit F4 and/or Fn-F4 to capture ACPI tables to the USB
-6. Install macOS but do not reboot until you have finished steps 7 and 8, below.
-7. Install Clover with UEFI only and UEFI64Drivers to SSD.
-8. Replace the original CLOVER folder on the SSD with the one from the USB drive under my Git/XPS9350-macOS/CLOVER.
-9. Once you finish installation of macOS, you can do the following steps to finish the post installation of macOS
+6. Boot to USB and hit F4 and/or Fn-F4 to capture ACPI tables to the USB
+7. Install macOS but do not reboot until you have finished steps 7 and 8, below.
+8. Install Clover with UEFI only and UEFI64Drivers to SSD.
+9. Replace the original CLOVER folder on the SSD with the one from the USB drive under my Git/XPS9350-macOS/CLOVER.
+10. Once you finish installation of macOS, you can do the following steps to finish the post installation of macOS
 
 
 How to use deploy.sh?
